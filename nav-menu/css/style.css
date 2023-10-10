@@ -159,7 +159,7 @@ img {
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: rgba(19, 19, 19, 0.8);
-   width: min(500px, calc(100% - 4em));
+   width: min(500px, calc(100% - 2em));
    padding: 2em;
    border-radius: 5px;
 }
@@ -169,6 +169,12 @@ img {
    font-weight: 400;
    color: #fff;
    text-align: center;
+}
+
+@media (min-width: 30em) {
+   .hero {
+      width: min(500px, calc(100% - 4em));  
+   }
 }
 
 @media (min-width: 54em) {
